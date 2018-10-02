@@ -1,0 +1,17 @@
+RBACMintableToken.test test/token/ERC20 180
+.test. test/ownership 500
+Pausable.test.js test/lifecycle 90
+.test test/crowdsale 500
+ERC721BasicToken.test test/token/ERC721 2900
+SafeMath.test.js test/math 90
+TokenMetadata.test test/proposals/ERC1046 30
+.test. test/library 100
+SimpleToken.test.js test/examples 60
+test. test 90
+BurnableToken.test test/token/ERC20 90
+CappedToken.test test/token/ERC20 120
+MintableToken.test test/token/ERC20 90
+DetailedERC20.test test/token/ERC20 30
+PausableToken.test test/token/ERC20 220
+StandardToken.test test/token/ERC20 250
+SafeERC20.test test/token/ERC20 60

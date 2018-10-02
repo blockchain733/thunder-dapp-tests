@@ -1,0 +1,6 @@
+#Provide the environment name as argument to
+#
+openzeppelin-solidity;openzeppelin;python3 test_thunder.py {ENV}
+MyToken;mytoken;truffle deploy --reset --network {ENV};truffle test --network {ENV}
+augur-core;augurcore;npm run docker:run:test:integration:geth
+cryptokitties/cheshire;cheshire;./test-cheshire-thunder.sh

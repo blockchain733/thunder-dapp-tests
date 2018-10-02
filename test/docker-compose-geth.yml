@@ -1,0 +1,17 @@
+version: "3.2"
+services:
+  geth-integration-tests:
+    build:
+      context: ../../../../
+      dockerfile: source/support/Dockerfile
+    entrypoint: [ "npm", "run", "test:integration:docker" ]
+    # uncomment the following 3 lines to enable debugging the tests
+    # command: [ "--", "--debug=0.0.0.0:9229", "--inspect-brk" ]
+    network_mode: "host"
+    ports:
+       - "8545:8545"
+       - "7545:7545"
+    env_file:
+       - ../../../../.env
+    environment:
+      - ETHEREUM_GAS_PRICE_IN_NANOETH=1
